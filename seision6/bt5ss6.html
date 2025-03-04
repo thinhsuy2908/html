@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        nav{
+            background-color: green;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 20px;
+        }
+        #name a{
+            text-decoration: none;
+            color: white;
+        }
+        #one{
+            background-color: green;
+            color: white;
+            border: none;    
+            border-radius: 5px;        
+        }
+        .two{
+            height: 40px;
+            width: 450px;
+            margin: 8px;
+            border-radius: 5px;   
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>MyLogo</p>
+        <div id="name">
+            <a href="#">Home</a>  <a href="#">About</a>  <a href="#">Services</a>  <a href="#">Contact</a>
+        </div>     
+    </nav>
+    <div>
+        <h1 style="text-align: center;">Welcome to My Website</h1>
+        <p style="text-align: center;">we prodive the best solutions for your business</p>
+        <div style="display: flex; justify-content: center;">
+        <button  id="one">Get Started</button>
+        </div>
+    </div>
+    <br>
+    <div>
+        <button class="two">Feature 1</button>
+        <button class="two">Feature 2</button>
+        <button class="two">Feature 3</button>
+    </div>
+    <br>
+</body>
+<footer>
+    <p>Contact us: email@example.com</p>
+</footer>
+</html>
