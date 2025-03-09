@@ -4,32 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .head{
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333333;
+            color: white;
+            padding: 20px 200px;
+}
+            
+         nav a{
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            
+   
+        }
+        .hot{
+            justify-content: center;
+            text-align: center;
+            background-color:#333333;
+            color: white;
+            padding: 20px;
+        }
+        .all {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 100px;
+            width: 50%;
+        }
+
+        .read {
+            margin: 20px;
+            background-color: #F4F4F4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .a{
+            margin: 20px;
+            background-color: #F9F9F9;
+            padding: 20px;
+        }
+        
+
+    </style>
 </head>
 <body>
     <div class="head">
         <h2>MY BLOG</h2>
+        <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Pots</a>
         <a href="#">Contact</a>
+        </nav>      
     </div>
-    <div class="write">
+    
+    <div class="all"></div>
+    <div class="read">
         <h3>Bài viết nổi bật</h3>
         <b>Tiêu đề bài viết chính</b>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla eu lorem tincidunt tristique.</p>
         <a href="#">[Đọc Thêm]</a>
     </div>
-    <div class="read">
-        <h3>Các bài viết khác</h3>
-        <b>Bài viết 1</b>
-        <p>Lorem ipsum dolor sit amet...</p>
-        <b>Bài viết 2</b>
-        <p>Ut nulla eu lorem tincidunt...</p>
-        <b>Bài viết 3</b>
-        <p>Consectetur adipiscing elit...</p>
-    </div>
-    <div class="head">
-        <p>&copy;2023 My Blog. All rights reserved.</p>
+            <div class="a">       
+            <h3>Các bài viết khác</h3>
+            <b>Bài viết 1</b>
+            <p>Lorem ipsum dolor sit amet...</p>
+            <b>Bài viết 2</b>
+            <p>Ut nulla eu lorem tincidunt...</p>
+            <b>Bài viết 3</b>
+            <p>Consectetur adipiscing elit...</p>
+        </div>
+    
+</div>
+    <div class="hot">
+        <span>&copy;2023 My Blog. All rights reserved.</span>
     </div>
 </body>
-</html>
+</html>    
