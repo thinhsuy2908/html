@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+            border-radius: 5px;
+
+        }
+        .out{
+            background-color: #320098;
+            margin: 20px;
+        }
+        .in{
+            background-color: #F9F9F9;
+            margin: 20px;
+            margin-bottom: 5px;
+        }
+        .head{
+            background-color: #FE0100;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        .side{
+            background-color: #008001;
+            color: white;
+            width: 20%;
+            margin-bottom: 5px;
+            
+        }
+        .word{
+            background-color: #FFFF05;
+            color: black;
+            width: 60%;
+            margin-bottom: 5px;
+        }
+        .hight{
+            background-color: #FF68B3;
+            color: white;
+            width: 20%;
+            margin-bottom: 5px;
+        }
+        .footer{
+            background-color: #0000FE;
+            color: white;
+            padding: 5px;
+        }
+        .body{
+            display: flex;
+            height: 500px;
+            margin-bottom: 5px;
+            
+        }
+        @media screen and (max-width:1024px) {
+            .body{
+                flex-direction: column;
+                height: 50%;
+            }
+            .hight,.side,.word{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+            <div class="head">
+                <p>Header</p>
+            </div>
+            <div class="body">
+                    <div class="side">
+                        <p>Sidebar 1</p>
+                    </div>
+                    <div class="word">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita modi repellat laboriosam nam id voluptatibus ab quae, quaerat accusamus voluptatem, cumque hic, repudiandae laudantium amet exercitationem numquam. Quaerat obcaecati deleniti quae ut repellendus praesentium modi illum corporis incidunt, nobis molestias inventore fugit voluptatibus tempora rem necessitatibus ipsam. Odio aperiam deserunt quia, enim voluptatem doloremque nobis exercitationem eum, quis, voluptate ullam minus quidem eos consectetur itaque! Soluta non similique quod quae odit? Possimus mollitia nemo itaque perferendis perspiciatis voluptates nostrum consequuntur saepe, aliquid, repellendus eligendi cumque explicabo adipisci aperiam velit earum repellat autem sequi? Asperiores soluta, tempore dolor suscipit enim possimus!
+                        </p>
+                    </div>
+                    <div class="hight">
+                        <p>Sidebar 2</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>footer</p>
+                </div>
+                   
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

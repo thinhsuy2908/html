@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+        }
+        body,html{
+            width: 100%;
+            height: 100vh;
+        }
+        .blue{
+            background-color: #78BCBE;
+            width: 100%;
+            height: 10%;
+        }
+        .both{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            height: 40%;
+        }
+        .red{
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .yellow{
+            background-color: yellow;
+            width: 100%;
+            height: 100%;
+        }
+        .some{
+            display: flex;
+        }
+        .darkblue{
+            background-color: #415E7B;
+            width: 100%;
+            height: 200px;
+
+        }
+        .small-yellow{
+            background-color: yellow;
+            width: 100%;
+            
+        }
+        .small-red{
+            background-color: red;
+            width: 100%;
+        }
+        @media screen and (max-width: 1024px){
+            *{
+                flex-direction: column;
+                width: 100%;
+            } 
+             .both{
+                flex-direction: column;
+                height: 100%;
+             }
+             .darkblue{
+                width: 100%;
+                height: 60px;
+             }
+             .small-red,.small-yellow{
+                display: none;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="blue"><p></p></div>
+    <div class="both">
+        <div class="red"><p></p></div>
+        <div class="yellow"><p></p></div>
+    </div>
+    <div class="blue"><p></p></div>
+    <div class="some">
+        <div class="darkblue"><p></p></div>
+        <div class="small-red"><p></p></div>
+        <div class="small-yellow"><p></p></div>
+    </div>
+    
+</body>
+</html>

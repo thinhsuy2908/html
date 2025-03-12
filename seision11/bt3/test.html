@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Base styles */
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    background-color: #c2185b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .item:nth-child(1) {
+        grid-column: span 6;
+    }
+    .item:nth-child(2), .item:nth-child(3), .item:nth-child(4) {
+        grid-column: span 2;
+    }
+    .item:nth-child(5) {
+        grid-column: span 6;
+    }
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .item:nth-child(1) {
+        grid-column: span 3;
+    }
+    .item:nth-child(2), .item:nth-child(3), .item:nth-child(4) {
+        grid-column: span 1;
+    }
+    .item:nth-child(5) {
+        grid-column: span 3;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .item {
+        grid-column: span 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
